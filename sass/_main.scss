@@ -1,0 +1,70 @@
+main {
+    background-color: aquamarine;
+
+    .container {
+        padding-top: 120px;
+
+        background-color: lightblue;
+
+        .top {
+
+            font-family: Barlow;
+            padding: 21px 76px 21px 76px;
+            
+            h1 {
+                color: $plain-white;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                letter-spacing: 2.88px;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                color: $lemon;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.44px;
+                text-transform: uppercase;
+
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+
+            p {
+                color: $light-grey;
+                width: 406px;
+                height: 103px;
+                flex-shrink: 0;
+
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 32px;
+                letter-spacing: 0.72px;
+
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                color: red;
+            }
+
+            a {
+                color: $plain-white;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.63px;
+                text-transform: uppercase;
+                display:inline-block;
+                border-radius: 30px;
+                width: 152px;
+                height: 43px;
+            }
+        }
+    }
+}

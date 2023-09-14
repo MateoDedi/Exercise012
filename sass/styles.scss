@@ -1,10 +1,8 @@
-@import 'config';
 @import 'utilities';
+@import 'config';
 @import 'buttons';
-@import 'mobile';
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'screens';
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}

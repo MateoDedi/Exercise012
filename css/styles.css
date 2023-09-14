@@ -1,5 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Barlow:wght@100;200;300;400;500;600;700;800&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: lightcoral;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: Barlow;
+  color: rgb(255, 255, 255);
+  background-color: red;
+}
+.header .container .logo {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.header .container .logo span {
+  color: rgb(230, 96, 108);
+}
+.header .container ul {
+  display: inline-flex;
+  list-style: none;
+  gap: 33px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
+}
+
+main {
+  background-color: aquamarine;
+}
+main .container {
+  padding-top: 120px;
+  background-color: lightblue;
+}
+main .container .top {
+  color: aqua;
+  font-family: Barlow;
+  padding-bottom: 10px;
+  margin-bottom: 100px;
+}
+main .container .top h1 {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+}
+main .container .top h2 {
+  color: rgb(232, 171, 54);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+main .container .top p {
+  color: rgb(216, 216, 216);
+  width: 406px;
+  height: 103px;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.72px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: red;
+}
+main .container .top a {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.63px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 21px 76px 21px 76px;
+}
+main .container .middle {
+  margin-top: 500px;
 }
