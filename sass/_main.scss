@@ -1,69 +1,227 @@
 main {
-    background-color: aquamarine;
 
-    .container {
-        padding-top: 120px;
+  .container {
+    padding-top: 120px;
 
-        background-color: lightblue;
+    .top::before {
+        content: url(/images/spiral.png);
+        top: -25px;
+        left: 30px;
+        position: absolute;
+        width: 200%;
+      }
 
-        .top {
+      .top::after {
+        content: url(/images/rectangle.png);
+        bottom: -80px;
+        left: 350px;
+        position: absolute;
+        width: 100%;
+      }
 
-            font-family: Barlow;
-            padding: 21px 76px 21px 76px;
-            
+    .top {
+
+      padding: 21px 76px 21px 76px;
+      position: relative;
+
+      h1 {
+        color: $plain-white;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 2.88px;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        color: $lemon;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.44px;
+        text-transform: uppercase;
+
+        padding-top: 20px;
+        padding-bottom: 10px;
+      }
+
+      p {
+        color: $light-grey;
+        width: 406px;
+        height: 103px;
+        flex-shrink: 0;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0.72px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        color: $light-grey;
+      }
+
+      a {
+
+        margin-top: 40px;
+        
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.63px;
+        text-transform: uppercase;
+        display: inline-block;
+        border-radius: 75px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        width: 152px;
+        height: 43px;
+        text-decoration: none;
+        
+        text-wrap: nowrap;
+        align-items: center;
+      }
+
+      .one {
+        background-color: $off-red;
+        padding: 11px 30px;
+        color: $plain-white;
+      }
+
+      .two {
+        background-color: #EFEFEF;;
+        margin-left: 20px;
+        padding: 11px 35px;
+        color: black;
+      }
+
+    }
+
+    .middle {
+        max-width: 100%;
+
+        padding-top: 250px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 210px;
+
+        .dude {
+            width: 570px;
+            height: 570px;
+            margin-left: 100px;
+        }
+
+        .desc {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .about-us {
+                color: rgba(255, 255, 255, 0.50);
+                font-family: Barlow;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+
             h1 {
-                color: $plain-white;
-                font-size: 64px;
+                color: #FFF;
+                font-family: Barlow Condensed;
+                font-size: 56px;
                 font-style: normal;
                 font-weight: 300;
-                line-height: normal;
-                letter-spacing: 2.88px;
-                text-transform: uppercase;
+                line-height: 64px;
             }
 
             h2 {
-                color: $lemon;
-                font-size: 32px;
+                color: #FFF;
+                font-size: 20px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: normal;
-                letter-spacing: 1.44px;
-                text-transform: uppercase;
-
-                padding-top: 20px;
-                padding-bottom: 10px;
+                line-height: 32px;
             }
 
-            p {
-                color: $light-grey;
-                width: 406px;
-                height: 103px;
-                flex-shrink: 0;
-
+            .text {
+                color: rgba(255, 255, 255, 0.50);
+                font-family: Barlow;
                 font-size: 16px;
                 font-style: normal;
-                font-weight: 300;
+                font-weight: 400;
                 line-height: 32px;
-                letter-spacing: 0.72px;
-
-                padding-top: 10px;
-                padding-bottom: 10px;
-
-                color: red;
             }
 
             a {
-                color: $plain-white;
+                margin-top: 30px;
+                background: #E6606C;
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
                 letter-spacing: 0.63px;
                 text-transform: uppercase;
-                display:inline-block;
-                border-radius: 30px;
-
+                display: inline-block;
+                border-radius: 75px;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                width: 152px;
+                height: 43px;
+                text-decoration: none;
+                text-wrap: nowrap;
+                align-items: center;
+                background-color: $off-red;
+                padding: 11px 30px;
+                color: $plain-white;
             }
         }
     }
+    .bot {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .hero {
+
+            .about-us {
+            color: rgba(255, 255, 255, 0.50);
+            font-family: Barlow;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            }
+
+            .head1 {
+            color: #FFF;
+            font-family: Barlow Condensed;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 64px;
+            }
+
+            .text {
+            color: rgba(255, 255, 255, 0.50);
+            font-family: Barlow;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            }
+
+        }
+
+        .mid {
+            
+        }
+    }
+  }
 }

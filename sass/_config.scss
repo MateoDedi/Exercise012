@@ -4,6 +4,19 @@
   padding: 0;
 }
 
+body {
+  background: linear-gradient(237deg, #2C2D65 0.35%, #201F22 100%);
+  font-family: Barlow;
+  position: relative;
+  .big::before {
+    content: url(/images/biglogo.png);
+    top: -111px;
+    left: 1580px;
+    position: absolute;
+    width: 100%;
+  }
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;

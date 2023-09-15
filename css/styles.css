@@ -5,14 +5,24 @@
   padding: 0;
 }
 
+body {
+  background: linear-gradient(237deg, #2C2D65 0.35%, #201F22 100%);
+  font-family: Barlow;
+  position: relative;
+}
+body .big::before {
+  content: url(/images/biglogo.png);
+  top: -111px;
+  left: 1580px;
+  position: absolute;
+  width: 100%;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.header {
-  background-color: lightcoral;
-}
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -20,7 +30,6 @@
   padding-bottom: 30px;
   font-family: Barlow;
   color: rgb(255, 255, 255);
-  background-color: red;
 }
 .header .container .logo {
   font-size: 32px;
@@ -43,16 +52,26 @@
   align-items: center;
 }
 
-main {
-  background-color: aquamarine;
-}
 main .container {
   padding-top: 120px;
-  background-color: lightblue;
+}
+main .container .top::before {
+  content: url(/images/spiral.png);
+  top: -25px;
+  left: 30px;
+  position: absolute;
+  width: 200%;
+}
+main .container .top::after {
+  content: url(/images/rectangle.png);
+  bottom: -80px;
+  left: 350px;
+  position: absolute;
+  width: 100%;
 }
 main .container .top {
-  font-family: Barlow;
   padding: 21px 76px 21px 76px;
+  position: relative;
 }
 main .container .top h1 {
   color: rgb(255, 255, 255);
@@ -86,10 +105,10 @@ main .container .top p {
   letter-spacing: 0.72px;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: red;
+  color: rgb(216, 216, 216);
 }
 main .container .top a {
-  color: rgb(255, 255, 255);
+  margin-top: 40px;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -97,5 +116,125 @@ main .container .top a {
   letter-spacing: 0.63px;
   text-transform: uppercase;
   display: inline-block;
-  border-radius: 30px;
+  border-radius: 75px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 152px;
+  height: 43px;
+  text-decoration: none;
+  text-wrap: nowrap;
+  align-items: center;
+}
+main .container .top .one {
+  background-color: rgb(230, 96, 108);
+  padding: 11px 30px;
+  color: rgb(255, 255, 255);
+}
+main .container .top .two {
+  background-color: #EFEFEF;
+  margin-left: 20px;
+  padding: 11px 35px;
+  color: black;
+}
+main .container .middle {
+  max-width: 100%;
+  padding-top: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 210px;
+}
+main .container .middle .dude {
+  width: 570px;
+  height: 570px;
+  margin-left: 100px;
+}
+main .container .middle .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .container .middle .desc .about-us {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+main .container .middle .desc h1 {
+  color: #FFF;
+  font-family: Barlow Condensed;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px;
+}
+main .container .middle .desc h2 {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+main .container .middle .desc .text {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+main .container .middle .desc a {
+  margin-top: 30px;
+  background: #E6606C;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.63px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 75px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 152px;
+  height: 43px;
+  text-decoration: none;
+  text-wrap: nowrap;
+  align-items: center;
+  background-color: rgb(230, 96, 108);
+  padding: 11px 30px;
+  color: rgb(255, 255, 255);
+}
+main .container .bot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main .container .bot .hero .about-us {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+main .container .bot .hero .head1 {
+  color: #FFF;
+  font-family: Barlow Condensed;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px;
+}
+main .container .bot .hero .text {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
 }
