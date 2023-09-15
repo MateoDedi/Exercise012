@@ -51,10 +51,8 @@ main .container {
   background-color: lightblue;
 }
 main .container .top {
-  color: aqua;
   font-family: Barlow;
-  padding-bottom: 10px;
-  margin-bottom: 100px;
+  padding: 21px 76px 21px 76px;
 }
 main .container .top h1 {
   color: rgb(255, 255, 255);
@@ -100,9 +98,4 @@ main .container .top a {
   text-transform: uppercase;
   display: inline-block;
   border-radius: 30px;
-  text-decoration: none;
-  padding: 21px 76px 21px 76px;
-}
-main .container .middle {
-  margin-top: 500px;
 }
