@@ -4,20 +4,19 @@ main {
     padding-top: 120px;
 
     .top::before {
-        content: url(/images/spiral.png);
-        top: -25px;
-        left: 30px;
-        position: absolute;
-        width: 200%;
-      }
+      content: url(/images/spiral.png);
+      top: -25px;
+      left: 30px;
+      position: absolute;
+      width: 100%;
+    }
 
-      .top::after {
-        content: url(/images/rectangle.png);
-        bottom: -80px;
-        left: 350px;
-        position: absolute;
-        width: 100%;
-      }
+    .top::after {
+      content: url(/images/rectangle.png);
+      bottom: -25px;
+      left: 350px;
+      position: absolute;
+    }
 
     .top {
 
@@ -68,7 +67,7 @@ main {
       a {
 
         margin-top: 40px;
-        
+
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -81,7 +80,7 @@ main {
         width: 152px;
         height: 43px;
         text-decoration: none;
-        
+
         text-wrap: nowrap;
         align-items: center;
       }
@@ -93,7 +92,8 @@ main {
       }
 
       .two {
-        background-color: #EFEFEF;;
+        background-color: #EFEFEF;
+        ;
         margin-left: 20px;
         padding: 11px 35px;
         color: black;
@@ -102,172 +102,187 @@ main {
     }
 
     .middle {
-        max-width: 100%;
+      max-width: 100%;
 
-        padding-top: 250px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 210px;
+      padding-top: 250px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 210px;
 
-        .dude {
-            width: 570px;
-            height: 570px;
-            margin-left: 100px;
-        }
+      .dude {
+        width: 570px;
+        height: 570px;
+        margin-left: 100px;
+      }
 
-        .desc {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-
-            .about-us {
-                color: rgba(255, 255, 255, 0.50);
-                font-family: Barlow;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 32px;
-                letter-spacing: 3px;
-                text-transform: uppercase;
-            }
-
-            h1 {
-                color: #FFF;
-                font-family: Barlow Condensed;
-                font-size: 56px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: 64px;
-            }
-
-            h2 {
-                color: #FFF;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 32px;
-            }
-
-            .text {
-                color: rgba(255, 255, 255, 0.50);
-                font-family: Barlow;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 32px;
-            }
-
-            a {
-                margin-top: 30px;
-                background: #E6606C;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                letter-spacing: 0.63px;
-                text-transform: uppercase;
-                display: inline-block;
-                border-radius: 75px;
-                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-                width: 152px;
-                height: 43px;
-                text-decoration: none;
-                text-wrap: nowrap;
-                align-items: center;
-                background-color: $off-red;
-                padding: 11px 30px;
-                color: $plain-white;
-            }
-        }
-    }
-    .bot {
+      .desc {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        gap: 20px;
 
-        .hero {
+        .about-us {
+          color: rgba(255, 255, 255, 0.50);
+          font-family: Barlow;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+        }
 
-            text-align: center;
-            padding-bottom: 60px;
+        h1 {
+          color: #FFF;
+          font-family: Barlow Condensed;
+          font-size: 56px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 64px;
+        }
 
-            .about-us {
-            color: rgba(255, 255, 255, 0.50);
-            font-family: Barlow;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 32px;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            padding-bottom: 20px;
-            }
+        h2 {
+          color: #FFF;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+        }
 
-            .head1 {
-            color: #FFF;
+        .text {
+          color: rgba(255, 255, 255, 0.50);
+          font-family: Barlow;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+        }
+
+        a {
+          margin-top: 30px;
+          background: #E6606C;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 0.63px;
+          text-transform: uppercase;
+          display: inline-block;
+          border-radius: 75px;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          width: 152px;
+          height: 43px;
+          text-decoration: none;
+          text-wrap: nowrap;
+          align-items: center;
+          background-color: $off-red;
+          padding: 11px 30px;
+          color: $plain-white;
+        }
+      }
+    }
+
+    .bot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .hero {
+
+        text-align: center;
+        padding-bottom: 60px;
+
+        .about-us {
+          color: rgba(255, 255, 255, 0.50);
+          font-family: Barlow;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          padding-bottom: 20px;
+        }
+
+        .head1 {
+          color: #FFF;
+          font-family: Barlow Condensed;
+          font-size: 56px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 64px;
+          padding-bottom: 30px;
+        }
+
+        .text {
+          color: rgba(255, 255, 255, 0.50);
+          font-family: Barlow;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+        }
+
+      }
+
+      .cards {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+
+
+        .left,
+        .mid,
+        .right {
+          width: 100%;
+          background: linear-gradient(180deg, #4D4F95 0%, #2B2D66 100%);
+          border-radius: 12px;
+          border: 2px solid rgba(255, 255, 255, 0.08);
+          display: block;
+          padding: 0px 0px 40px 0px;
+
+          .obj-left1,
+          .obj-mid1,
+          .obj-right1 {
+            padding: auto;
+          }
+
+        a {
+          width: 0;
+          height: 0;
+          text-decoration: none;
+          padding: 0%;
+
+
+          h2 {
             font-family: Barlow Condensed;
-            font-size: 56px;
+            font-size: 24px;
             font-style: normal;
             font-weight: 300;
-            line-height: 64px;
-            padding-bottom: 30px;
-            }
+            line-height: 32px;
+            color: #FFF;
+            padding: 0px;
+          }
 
-            .text {
+          p {
             color: rgba(255, 255, 255, 0.50);
             font-family: Barlow;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 32px;
-            }
+          }
+
+
 
         }
 
-        .cards {
-            display: grid;
-            gap: 20px;
-            grid-template-columns: 1fr 1fr 1fr;
-            
 
 
-            .left, .mid, .right{
-                width: 100%;
-                background: linear-gradient(180deg, #4D4F95 0%, #2B2D66 100%);
-                border-radius: 12px;
-                border: 2px solid rgba(255, 255, 255, 0.08);
-                display: grid;
-                grid-template-rows: 0.5fr 2fr;
-                a {                
-                    
-                    
-                h2 {
-                    font-family: Barlow Condensed;
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: 32px;
-                    color: #FFF;
-                }
-    
-                p {
-                    color: rgba(255, 255, 255, 0.50);
-                    font-family: Barlow;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;
-                }
-            
-                text-decoration: none;
+      }
 
-            }
-
-
-                
-            }
-
-        }
     }
   }
+}
 }

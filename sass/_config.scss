@@ -5,15 +5,20 @@
 }
 
 body {
+  max-width: 100vw;
+  min-height: 100vh;
   background: linear-gradient(237deg, #2C2D65 0.35%, #201F22 100%);
   font-family: Barlow;
   position: relative;
   .big::before {
     content: url(/images/biglogo.png);
-    top: -111px;
-    left: 1580px;
+    top: 0;
+    right: 0;
+    transform: translateY(1000px);
+    transform: translatex(120px);
+
     position: absolute;
-    width: 100%;
+    object-fit: none;
   }
 }
 
